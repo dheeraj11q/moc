@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../moc.dart';
+import 'package:moc/data/app_data.dart';
 
 Widget searchBar(Size size) {
   return SizedBox(

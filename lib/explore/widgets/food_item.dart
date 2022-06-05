@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../food_data_model.dart';
+import 'package:moc/data/food_data_model.dart';
 
 Widget foodItem({required Size size, required FoodDataModel foodDataModel}) {
   return PhysicalModel(

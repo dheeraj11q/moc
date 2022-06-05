@@ -1,31 +1,17 @@
 import 'package:flutter/material.dart';
-import 'food_data_model.dart';
+import 'package:moc/data/app_data.dart';
 import 'widgets/food_item.dart';
 import 'widgets/search_bar.dart';
 import 'widgets/top_heading_item.dart';
 
-String imagePath = "assets/imageSlice/";
-
-class Moc extends StatefulWidget {
-  const Moc({Key? key}) : super(key: key);
+class Explore extends StatefulWidget {
+  const Explore({Key? key}) : super(key: key);
 
   @override
-  State<Moc> createState() => _MocState();
+  State<Explore> createState() => _ExploreState();
 }
 
-class _MocState extends State<Moc> {
-  List foodData = [
-    FoodDataModel(
-        name: "Vegan Resto",
-        image: imagePath + "Resturant Image.png",
-        time: "12 min"),
-    FoodDataModel(
-        name: "Healthy Food", image: imagePath + "healthy.png", time: "30 min"),
-    FoodDataModel(
-        name: "Smart Resto",
-        image: imagePath + "Restaurant Image22.png",
-        time: "6 min")
-  ];
+class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

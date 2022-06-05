@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moc/moc/moc.dart';
+import 'package:moc/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,16 +8,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Moc',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Moc(),
+      home: const Home(),
     );
   }
 }
